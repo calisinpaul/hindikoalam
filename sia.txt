@@ -1,0 +1,51 @@
+import java.util.Scanner;
+public class ScannerTut {
+	public static void main(String[] args) {
+	
+	Scanner scan = new Scanner (System.in);
+
+    System.out.println("Enter your First Name:");
+    String fname = scan.next();
+    
+       System.out.println("Enter your Last name:");
+       String lname= scan.next();
+       
+      System.out.println("Enter your Middle name: ");
+      String mname= scan.next();
+       
+       System.out.println("Enter your Age:");
+       int age = scan.nextInt();
+		
+		   System.out.println("Enter you Address:");
+		   String add = scan.next();
+		   add += scan.nextLine();
+		   
+		      System.out.println("Prelim grade:");
+	float prelim= scan.nextFloat();
+	
+	   System.out.println("Midterm grade:");
+	   float midterm = scan.nextFloat();
+	   
+	      System.out.println("Final grade:");
+	      float fnal = scan.nextFloat();
+	      
+	         System.out.println("Average:");
+	         float ave = scan.nextFloat();
+	         
+	          if ( ave >= 5.0 && ave<= 0  )  
+	         { 
+	         System.out.println("Remarks: failed");
+	         }
+	         else if  (ave >= 1.0 && ave <= 5.0)
+	         { 
+	         System.out.println ("Remarks: passed");
+	         }
+	         else { 
+	         System.out.println("invalid average");
+	         }
+	         
+	        System.out.println("My name is " + fname + " "+ mname +" "+ lname + " , "+ age +" years old from  " + add + " . My prelim grade is " + prelim+ ", midterm is " + midterm + " and  final grade is  " + fnal + " with the average of "+ ave);
+	        System.out.println();
+	       
+		
+	}
